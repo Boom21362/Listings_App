@@ -2,7 +2,7 @@
 defineProps({
     routeName: String,
     componentName: String
-})
+});
 </script>
 
 <template>

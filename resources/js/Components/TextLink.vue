@@ -1,13 +1,13 @@
 <script setup>
 defineProps({
     routeName: String,
-    componentName: String
-})
+    label: String,
+});
 </script>
 
 <template>
-    <Link :href="route(routeName)" class="px-3 py-2 rounded-lg hover:bg-slate-700"
-        :class="{'bg-slate-700' : $page.component === componentName }">
-        <slot />
+    <Link :href="route(routeName)"
+    class="text-indigo-500 hover:text-indigo-600 font-medium underline dark:text-indigo-400 dark:hover:text-indigo-500">
+        {{ label }}
     </Link>
 </template>    
